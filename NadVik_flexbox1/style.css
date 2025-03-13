@@ -1,0 +1,34 @@
+section{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+article{
+    text-align: justify;
+    color:beige;
+    margin: 5px;
+    border: 2px solid black;
+    background-color:  rgb(124, 120, 120);
+    flex: 1 1 200px;
+}
+#nav1{
+    background-color: rgb(203, 199, 199);
+}
+#nav1 div a{
+    text-decoration: none;
+}
+#nav1 div a{
+    background-color: rgb(203, 199, 199);
+    color: red;
+}
+#nav1 div a:hover{
+    background-color: red;
+    color: white;
+}
+
+#nav1 {
+    display: flex;
+    justify-content: space-between;
+}
