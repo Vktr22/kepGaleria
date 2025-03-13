@@ -1,4 +1,4 @@
-export default class Kep{       //azért használjuk a default-ot, mert 1file-ban 1 class van
+export default class KiemeltKep{       //azért használjuk a default-ot, mert 1file-ban 1 class van
     //privát adattagok:
     #eUt;   //=elérési út
     #cim;
@@ -15,10 +15,11 @@ export default class Kep{       //azért használjuk a default-ot, mert 1file-ba
         //html kódban elhelyezzük a képet az adataival
         let html=`
                      <div class="kep">
+                        <h3>${this.#cim}</h3>
                         <img src="${this.#eUt}" alt="${this.#eUt}">
                     </div>
                 `;
-        this.szuloElem.innerHTML += html;
+        this.szuloElem.innerHTML = html;
     }
 
 }
